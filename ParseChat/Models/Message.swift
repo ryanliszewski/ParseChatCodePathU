@@ -10,7 +10,7 @@ import Foundation
 import Parse
 
 class Message: PFObject {
-  var text: String? 
+  @NSManaged var text: String?
 }
 
 extension Message: PFSubclassing {

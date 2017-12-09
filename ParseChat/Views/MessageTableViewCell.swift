@@ -10,12 +10,22 @@ import UIKit
 
 class MessageTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
+  @IBOutlet weak var messageTextLabel: UILabel!
+  
+  
+  override func awakeFromNib() {
+    super.awakeFromNib()
+  }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-
+  override func setSelected(_ selected: Bool, animated: Bool) {
+    super.setSelected(selected, animated: animated)
+  }
+  
+  func bindData(message: Message){
+    
+    print(message.text)
+    messageTextLabel.text = message.text
+    
+    
+  }
 }

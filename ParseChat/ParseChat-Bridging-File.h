@@ -9,5 +9,7 @@
 #ifndef ParseChat_Bridging_File_h
 #define ParseChat_Bridging_File_h
 
+#import <Parse/PFObject+Subclass.h>
+#import <ParseUI/PFObject+Subclass.h>
 
 #endif /* ParseChat_Bridging_File_h */
