@@ -1,0 +1,18 @@
+PODS:
+  - Bolts/Tasks (1.8.4)
+  - Parse (1.15.3):
+    - Bolts/Tasks (~> 1.8)
+  - SkyFloatingLabelTextField (3.4.0)
+
+DEPENDENCIES:
+  - Parse
+  - SkyFloatingLabelTextField (~> 3.0)
+
+SPEC CHECKSUMS:
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  Parse: cdc0f1f975ee8be0409e66f21b05df4ae067047c
+  SkyFloatingLabelTextField: 703aa1420b697392b1e7dba25571180dde018477
+
+PODFILE CHECKSUM: 2195a4b10da15b9e33cc3499e9fc781309c2a85a
+
+COCOAPODS: 1.2.0
