@@ -11,6 +11,7 @@ import UIKit
 class MessageFeedViewController: UIViewController {
 
   
+  @IBOutlet weak var messageTextField: UITextField!
   @IBOutlet weak var messageTableView: UITableView!
   
   
@@ -18,10 +19,29 @@ class MessageFeedViewController: UIViewController {
         super.viewDidLoad()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+  @IBAction func onSendMessageButtonTapped(_ sender: Any) {
+    
+    var message = Message()
+    message.text = messageTextField.text
+    
+    message.saveInBackground { (success, error) in
+      if success {
+        print("message was saved")
+        //TODO
+          //Make delegate to display message
+      } else {
+        print("\(error?.localizedDescription ?? "No error message")")
+        //TODO
+          //Make drop down notification for message sent and no message = error 
+      }
     }
+  }
 }
+
+
+
+
+
 extension MessageFeedViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

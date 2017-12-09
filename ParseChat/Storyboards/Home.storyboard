@@ -29,6 +29,9 @@
                                 <rect key="frame" x="303" y="394" width="72" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="onSendMessageButtonTapped:" destination="9iz-H9-1q8" eventType="touchUpInside" id="JhS-Mo-Hr3"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qkl-8K-kW3">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="386"/>
@@ -60,6 +63,7 @@
                     </view>
                     <connections>
                         <outlet property="messageTableView" destination="qkl-8K-kW3" id="dm7-NO-5Pv"/>
+                        <outlet property="messageTextField" destination="2Aq-3v-lpj" id="QRZ-eB-WVt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffz-l6-Oh6" userLabel="First Responder" sceneMemberID="firstResponder"/>

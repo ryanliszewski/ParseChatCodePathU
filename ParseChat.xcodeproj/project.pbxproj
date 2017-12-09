@@ -112,6 +112,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		73075DDC1FDBAFFF00712F04 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				73807F911FDA801100EEDC4F /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		739434DF1FD333CF00D9D20D = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +145,7 @@
 		739434EA1FD333CF00D9D20D /* ParseChat */ = {
 			isa = PBXGroup;
 			children = (
+				73075DDC1FDBAFFF00712F04 /* Models */,
 				7394352C1FD346BD00D9D20D /* Views */,
 				739435261FD3455700D9D20D /* ViewControllers */,
 				739435271FD3456D00D9D20D /* Storyboards */,
@@ -144,7 +153,6 @@
 				739434F51FD333CF00D9D20D /* Assets.xcassets */,
 				739434FA1FD333CF00D9D20D /* Info.plist */,
 				739434F21FD333CF00D9D20D /* ParseChat.xcdatamodeld */,
-				73807F911FDA801100EEDC4F /* Message.swift */,
 				73807F931FDA817900EEDC4F /* ParseChat-Bridging-File.h */,
 			);
 			path = ParseChat;
